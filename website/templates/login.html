@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<style>
+
+</style>
+
+<head>
+  <meta charset="UTF-8">
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" href="index.css"/>
+
+  <title> PokeAnimal </title>
+  </head>
+
+
+  <body>
+    <header>
+          <h1 style="color: wheat;">PokeAnimal</h1>
+      <br>
+            {% if message %}
+    <div>{{ message }}</div>
+    {% endif %}
+
+<form action="{% url 'website:login' %}" method="post" >
+{% csrf_token %}
+<input type="text" name="username" placeholder="Username" class="log">
+<input type="password" name="password" placeholder="Password" class="log">
+<input type="submit" value="Entrar" class="log">
+</form>
+      <nav class="dp-menu">
+              <ul>
+                 <li>
+                     <a href="index.html" class="pedro1" > <i class="material-icons" id="iconhome">home</i>HOME</a>
+                  </li>
+                 <li>
+                     <a href="#" class="pedro"><i class="material-icons" id="iconhome">pets</i>ANIMALS</a>
+
+                  </lu>
+                  <ul>
+                  <li><a href="animais.html" class="pedro2"><img src="static/css/imagens/pawprints.png" id="iconhome1">TODOS</a></li>
+                  <li><a href="mamiferos.html" class="pedro2"><img src="static/css/imagens/ferret.png" id="iconhome1"> <span class="mmm">MAMÍFEROS</span> </a></li>
+                  <li><a href="aves.html" class="pedro2"><img src="static/css/imagens/robin.png" id="iconhome1">AVES </a></li>
+                  <li><a href="repteis.html" class="pedro2"><img src="static/css/imagens/chameleon.png" id="iconhome1">RÉPTEIS</a></li>
+                  <li><a href="peixes.html" class="pedro2"><img src="static/css/imagens/clown-fish.png" id="iconhome1">PEIXES</a></li>
+                  <li><a href="anfibios.html" class="pedro2"><img src="static/css/imagens/golden-dart-frog.png" id="iconhome1">ANFÍBIOS </a></li>
+                  <li><a href="invertebrados.html" class="pedro2"><img src="static/css/imagens/ladybug.png" id="iconhome1">INSETOS</a></li>
+                </ul>
+                  </li>
+                        <li>
+                            <a href="jogo.html" class="pedro3"><i class="material-icons" id="iconhome">games</i>QUIZZ</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html" class="pedro3"><i class="material-icons" id="iconhome">info</i>SOBRE</a>
+                        </li>
+                  <li>
+                     <a href="pokedex.html" class="pedro"><i class="material-icons" id="iconhome">pets</i>POKEDEX</a>
+                 </li>
+                  <li>
+                     <a href="contato.html" class="pedro"><i class="material-icons" id="iconhome">pets</i>CONTATO</a>
+                 </li>
+                  <li>
+                     <a href="comentario.html" class="pedro"><i class="material-icons" id="iconhome">pets</i>COMENTARIOS</a>
+                 </li>
+                  <li>
+                             <a href="javascript.html" class="pedro3"><i class="material-icons" id="iconhome">pets</i>API</a>
+                         </li>
+                  </ul>
+
+      </nav>
+      </header>
+
+
+    <main>
+
+
+        <section class="flex-container1">
+
+            <section >
+                <h3 style="text-align: center;color: white;" class="primeiro">Classes dos animais</h3>
+                <br><br><br>
+                <p class="letras">
+                Os <i class="boldd">Mamíferos</i> geralmente, têm o corpo coberto de pêlo. Nascem no útero da mãe. Quando são pequenos, alimentam-se do leite materno. A maior parte anda, outros nadam e outros voam. Têm esqueleto interno. São animais vertebrados.
+                <br><br>Os <i class="boldd">Répteis</i> geralmente, têm o corpo coberto de escamas e alguns têm uma carapaça com placas. Nascem de ovos. Alguns répteis rastejam pelo solo, outros nadam, outros andam e nadam. Têm esqueleto interno. São animais vertebrados.
+                <br><br>Os <i class="boldd">Peixes</i> vivem e respiram dentro da água. Nascem de ovos. Têm o corpo coberto de escamas. Para nadar, possuem barbatanas. Têm esqueleto interno. São animais vertebrados.
+                <br><br>As <i class="boldd">Aves</i> têm o corpo coberto de penas. Têm a boca em forma de bico. Têm os membros superiores transformados em asas. Têm esqueleto interno. São animais vertebrados.
+                <br><br>Os <i class="boldd">Insectos</i> têm duas antenas e seis patas. Alguns insectos têm duas asas, como a mosca, e outros quatro asas, como a borboleta. Nascem de ovos. Não têm esqueleto interno. São animais invertebrados.
+                <br><br>Os <i class="boldd">Anfíbios</i> têm a pele nua e húmida. Os anfíbios ou batráquios vivem na terra e na água. Nascem de ovos. Têm esqueleto interno. São animais vertebrados.
+            </p>
+            </section>
+            <section style="border-right: 2px solid black;width: 100%;height: 100%;  border-left: 1px solid black;" class="secao">
+
+                <table id="pokedex" style="margin-top: 10%;">
+                    <tr>
+                        <th>Classe</th>
+                        <th>Número de Espécies</th>
+                    </tr>
+                    <tr>
+                        <td>Mamíferos</td>
+                        <td>5 416</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Répteis</td>
+                        <td>6 000</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Peixes</td>
+                        <td>35 000</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Aves</td>
+                        <td>9 600</td>
+                    </tr>
+
+                    <tr>
+                        <td>Insectos</td>
+                        <td>10 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Anfíbios</td>
+                        <td>5 200</td>
+                    </tr>
+                    </table>
+
+            </section>
+        </section>
+
+
+
+        <section class="flex-container2">
+            <p class="titulo">
+                Picture of the day
+            </p>
+
+            <p class="fotoutil">
+                Fotografia tirada pelo utilizador: LucioStuder <br>Dia 13 de Abril 2021
+            </p>
+        </section>
+
+
+
+
+
+
+        <section class="flex-container3">
+            <h2 class="noti1">Fun Facts</h2>
+
+            <section class="sec9" >
+
+                <img src="static/css/imagens/tigrecirc.jpg" class="circtigre">
+                <p  class="ds">Os <i>Tigres</i> conseguem ver 6 vezes melhor do que os humanos.</p>
+
+
+            </section >
+
+            <section class="sec9">
+
+                <img src="static/css/imagens/koala.jpg" class="circtigre">
+                <p  class="ds">Os <i>Coalas</i> dormem 22h por dia.</p>
+
+
+            </section>
+
+            <section class="sec9">
+
+                <img src="static/css/imagens/croco.jpg" class="circtigre">
+                <p class="ds">Os <i>Crocodilos</i> podem sobreviver por três anos sem alimento.</p>
+
+
+            </section>
+
+        </section>
+
+
+
+        <section class="flex-container4">
+            <h2 class="noti">Notícias</h2>
+
+            <section class="sec1" >
+                <a href="https://www.popularmechanics.com/science/animals/g20955197/animals-almost-extinct/" target="_blank">
+                <img src="static/css/imagens/Promo.jpg" alt="extinção" class="pic">
+            </a>
+                <p class="este">Animais em extinção</p>
+
+
+            </section >
+
+            <section class="sec2">
+                <a href="https://www.publico.pt/2021/03/31/p3/noticia/russia-aprova-primeira-vacina-covid19-animais-1956635" target="_blank">
+                    <img src="static/css/imagens/vacina.jpg" alt="vacinas" class="pic">
+                </a>
+                    <p class="este">Vacinas para animais</p>
+
+
+            </section>
+
+            <section class="sec3">
+                <a href="https://tvi24.iol.pt/videos/sociedade/jardim-zoologico-de-lisboa-reabre-com-novos-moradores-nascidos-durante-o-confinamento/607991690cf280db4103acb7" target="_blank">
+                    <img src="static/css/imagens/zoo.jpg" alt="vacinas" class="pic">
+                </a>
+                    <p class="este">Jardim Zoológico Lisboa</p>
+
+
+            </section>
+
+        </section>
+
+
+
+
+
+        <section class="sesson" >
+            <div class="parallax"></div>
+            <h3  class="caixatexto">Video do mês</h3>
+
+
+            <a href="https://www.youtube.com/watch?v=_qgA63Ixc_Y" target="_blank">
+            <img alt="video" src="static/css/imagens/play.svg" class="iii"  >
+        </a>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="flex-container5">
+            <section class="mapa">
+                <svg height="100%" width="100%">
+
+                <a  href="static/css/imagens/coalaiframe.jpg"  target="fotoanimal" >
+                    <circle class="circle"></circle>
+
+                </a>
+                <a href="static/css/imagens//lemur-iframe.jpg" target="fotoanimal">
+                    <circle class="circle1"></circle>
+
+                </a>
+                <a href="static/css/imagens/lontra-iframe.jpg" target="fotoanimal">
+                    <circle class="circle2"></circle>
+
+                </a>
+
+                <a href="static/css/imagens/pinguim-iframe.jpg" target="fotoanimal">
+                    <circle class="circle3"></circle>
+
+                </a>
+                <a href="static/css/imagens/tigre-iframe.jpg" target="fotoanimal">
+                    <circle class="circle4"></circle>
+
+                </a>
+
+                <a href="static/css/imagens/croco-iframe.jpg" target="fotoanimal">
+                    <circle class="circle5"></circle>
+
+                </a>
+
+                <a href="static/css/imagens/wolf-iframe.jpg" target="fotoanimal">
+                    <circle class="circle6"></circle>
+
+                </a>
+
+                <a href="static/css/imagens/aguia-iframe.jpg" target="fotoanimal">
+                    <circle class="circle7"></circle>
+
+                </a>
+                <a href="static/css/imagens/polar-iframe.jpg" target="fotoanimal">
+                    <circle class="circle8"></circle>
+
+                </a>
+            </svg>
+            </section>
+
+            <section class="fundo">
+
+                <iframe class="mudar" name="fotoanimal">
+
+                </iframe>
+            </section>
+        </section>
+
+        <section class="flex-container7">
+            <section class="centrado">
+                <svg  class="worldcloud">
+                    <g transform="translate(100,75)">
+                        <a href="index.html">
+                            <text id="TextElement" x="-130" y="-5" style="font-family:Palatino;font-size:28;font-weight:bold; visibility:hidden">PokeAnimal
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 30 300 L 100 89" begin="1s" dur="3s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="3s" fill="freeze" />
+                              </text>
+                        </a>
+
+                      <a href="animais.html">
+                           <text id="TextElement2" x="-80" y="-80" style="font-family:Palatino;font-size:23; visibility:hidden">Classes
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 100 10 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="90" begin="1s" dur="2s" fill="freeze" />
+                            </text>
+                    </a>
+                    <a href="mamiferos.html">
+                        <text id="TextElement3" x="-30" y="-50" style="font-family:Andale Mono;font-size:19; visibility:hidden">Mamíferos
+                     <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                     <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze"/>
+                     </text>
+                    </a>
+
+                    <a href="aves.html">
+                        <text id="TextElement" x="-80" y="2" style="font-family:Palatino;font-size:19; visibility:hidden">Aves
+                         <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                         <animateMotion path="M 30 300 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                         <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-100" to="0" begin="1s" dur="3s" fill="freeze" />
+                       </text>
+                       </a>
+
+                    <a href="repteis.html">
+                        <text id="TextElement3" x="-90" y="-30" style="font-family:Andale Mono;font-size:19; visibility:hidden">Répteis
+                     <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                     <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze" />
+                     </text>
+                 </a>
+
+                    <a href="peixes.html">
+                         <text id="TextElement3" x="-50" y="-2" style="font-family:OCR A Std;font-size:17; visibility:hidden">Peixes
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                        <animateMotion path="M 0 0 L 50 100" begin="1s" dur="3s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="skewY" from="-100" to="0" begin="1s" dur="3s" fill="freeze" />
+                        </text>
+                    </a>
+
+                    <a href="anfibios.html">
+                           <text id="TextElement3" x="-20" y="2" style="font-family:Courier New-B;font-size:19; visibility:hidden">Anfíbios
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                        <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="5s" fill="freeze" />
+                        </text>
+                    </a>
+                    <a href="invertebrados.html">
+                        <text id="TextElement3" x="15" y="-55" style="font-family:Courier New-B;font-size:19; visibility:hidden" >Insetos
+                         <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                     <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                     <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="3s" fill="freeze" />
+                     </text>
+                 </a>
+
+
+                    </g>
+                  </svg>
+                </section>
+
+        </section>
+    </main>
+
+
+<footer class="flex-container6">
+
+            <section class="sec4">
+                <p class="footerl">PokeAnimal</p>
+                <p class="footerl1">Com este jogo queremos que aprendas mais sobre o mundo animal.</p>
+            </section>
+
+            <section class="sec5">
+                <p class="footerl">Explore</p>
+               <a href="pokedex.html"><p class="footerl1">Pokedex</p></a>
+                <a><p class="footerl1">Animals</p></a>
+                <a><p class="footerl1">About</p></a>
+
+
+            </section>
+
+            <section class="sec6">
+                <p class="footerl">Partners</p>
+            <section class="sec8">
+                <a> <img src="static/css/imagens/natgeo.jpg" class="natgeo"> </a>
+                <a> <img src="static/css/imagens/zoolisboa.jpg" class="zoolisa"> </a>
+            </section>
+
+            </section>
+
+            <section class="sec7">
+                <p class="footerl">Legal</p>
+                <p class="footerl1">Terms</p>
+                <p class="footerl1">Privacy</p>
+
+            </section>
+
+
+    </footer>
+      </body>
+      </html>
+
+
+
+
+
+
+
+

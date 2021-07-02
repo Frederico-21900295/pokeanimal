@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+
+<main class="main-comentario">
+<section class="field_coment">
+    <form action="{% url 'website:comentarios' %}" method="POST">
+        <section class="section-comment">
+            {% csrf_token %}
+        {{ form.as_p }}
+        </section>
+
+        <input type="submit" value="Enviar" style="margin-left: 40%; font-size: 1.2vw">
+    </form>
+</section>
+
+
+
+<section>
+    <a style="color: white;font-size: 2vw" href="grafico.html">Ver grafico</a>
+</section>
+
+
+</main>
+
+
+{% endblock %}

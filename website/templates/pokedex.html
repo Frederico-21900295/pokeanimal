@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block pagina %}
+{% load render_table from django_tables2 %}
+
+<main class="pokke">
+
+    {% render_table object_list %}
+
+
+
+</main>
+
+{% endblock %}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<style>
+
+</style>
+
+<head>
+  <meta charset="UTF-8">
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" href="index.css"/>
+
+  <title> PokeAnimal </title>
+  </head>
+
+
+  <body>
+    <header>
+          <h1 style="color: wheat;">PokeAnimal</h1>
+      <br>
+        {% if user.is_authenticated %}
+                       <a  href="{% url 'website:logout' %}" style="color:white;margin-left: 2vw"><p style="margin-left: 1vw">{{ request.user.username }}   Logout</p> </a>
+                        {% else %}
+                        <a  href="{% url 'website:login' %}" ><span class="material-icons" style="color:white; margin-left: 1.5vw;">person</span><p style="color:white;margin-left: 1vw;">Login</p></a>
+                        <a  href="{% url 'website:signup' %}" ><span class="material-icons" style="color:white; margin-left: 1.5vw;margin-top: 1vw">person</span><p style="color:white;margin-left: 1vw">SignUp</p></a>
+
+        {% endif %}
+      <nav class="dp-menu">
+              <ul>
+                 <li>
+                     <a href="index.html" class="pedro1" > <i class="material-icons" id="iconhome">home</i>HOME</a>
+                  </li>
+                 <li>
+                     <a href="#" class="pedro"><i class="material-icons" id="iconhome">pets</i>ANIMALS</a>
+
+                  </lu>
+                  <ul>
+                  <li><a href="animais.html" class="pedro2"><img src="static/css/imagens/pawprints.png" id="iconhome1">TODOS</a></li>
+                  <li><a href="mamiferos.html" class="pedro2"><img src="static/css/imagens/ferret.png" id="iconhome1"> <span class="mmm">MAMÍFEROS</span> </a></li>
+                  <li><a href="aves.html" class="pedro2"><img src="static/css/imagens/robin.png" id="iconhome1">AVES </a></li>
+                  <li><a href="repteis.html" class="pedro2"><img src="static/css/imagens/chameleon.png" id="iconhome1">RÉPTEIS</a></li>
+                  <li><a href="peixes.html" class="pedro2"><img src="static/css/imagens/clown-fish.png" id="iconhome1">PEIXES</a></li>
+                  <li><a href="anfibios.html" class="pedro2"><img src="static/css/imagens/golden-dart-frog.png" id="iconhome1">ANFÍBIOS </a></li>
+                  <li><a href="invertebrados.html" class="pedro2"><img src="static/css/imagens/ladybug.png" id="iconhome1">INSETOS</a></li>
+                </ul>
+                  </li>
+                        <li>
+                            <a href="jogo.html" class="pedro3"><i class="material-icons" id="iconhome">games</i>QUIZZ</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html" class="pedro3"><i class="material-icons" id="iconhome">info</i>SOBRE</a>
+                        </li>
+                          <li>
+                             <a href="pokedex.html" class="pedro3"><i class="material-icons" id="iconhome">pets</i>POKEDEX</a>
+                         </li>
+                          <li>
+                             <a href="contato.html" class="pedro3"><i class="material-icons" id="iconhome">pets</i>CONTATO</a>
+                         </li>
+                          <li>
+                             <a href="comentario.html" class="pedro3"><i class="material-icons" id="iconhome">pets</i>COMENTARIOS</a>
+                         </li>
+                          <li>
+                             <a href="javascript.html" class="pedro3"><i class="material-icons" id="iconhome">pets</i>API</a>
+                         </li>
+
+                  </ul>
+
+      </nav>
+      </header>
+
+
+{% block pagina %}
+    <main>
+
+    </main>
+
+  {% endblock pagina %}
+
+<footer class="flex-container6">
+
+            <section class="sec4">
+                <p class="footerl">PokeAnimal</p>
+                <p class="footerl1">Com este jogo queremos que aprendas mais sobre o mundo animal.</p>
+            </section>
+
+            <section class="sec5">
+                <p class="footerl">Explore</p>
+               <a href="pokedex.html"><p class="footerl1">Pokedex</p></a>
+                <a><p class="footerl1">Animals</p></a>
+                <a><p class="footerl1">About</p></a>
+
+
+            </section>
+
+            <section class="sec6">
+                <p class="footerl">Partners</p>
+            <section class="sec8">
+                <a> <img src="static/css/imagens/natgeo.jpg" class="natgeo"> </a>
+                <a> <img src="static/css/imagens/zoolisboa.jpg" class="zoolisa"> </a>
+            </section>
+
+            </section>
+
+            <section class="sec7">
+                <p class="footerl">Legal</p>
+                <p class="footerl1">Terms</p>
+                <p class="footerl1">Privacy</p>
+
+            </section>
+
+
+    </footer>
+      </body>
+      </html>
+
+
+
+
+
+
+
+

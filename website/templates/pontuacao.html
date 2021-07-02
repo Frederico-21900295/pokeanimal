@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+
+
+
+
+<main class="main_questionario1">
+<section class="gridzz">
+<section class="section1">
+        {% for pergunta in perguntas %}
+            {% if pergunta.numero <= 10 %}
+            <p class="pergunta_quest1"  >{{ pergunta.numero }}) {{pergunta.pergunta}} </p>
+            <p class="vuvu">Resposta correta: {{ pergunta.answer }}</p>
+            {% endif %}
+        {% endfor %}
+</section>
+
+<section class="section2">
+ {% for valores in respostas %}
+
+
+                           <p class="vivi">Sua resposta: {{ valores.respostas }} </p>
+
+                    {% if valores.pontos == 2 %}
+                        <p class="xsymbol">✅</p>
+                        {% else %}
+                        <p class="xsymbol">❌</p>
+                    {% endif %}
+
+                        {% endfor %}
+
+</section>
+</section>
+
+ {% for nota in notas %}
+     {% if nota.pontos >= 0 and nota.pontos <= 5 %}
+         <div class="grid-resultados">
+         <div class="resultados1">
+         <p>{{ nota.pontos  }}/20</p></div>
+
+             <div class="resultados2">🙁</div>
+         </div>
+
+         {% elif nota.pontos <= 9 %}
+         <div class="grid-resultados">
+         <div class="resultados1">
+         <p>{{ nota.pontos  }}/20</p></div>
+
+             <div class="resultados2">😐</div>
+         </div>
+
+         {% elif nota.pontos <= 14 %}
+         <div class="grid-resultados">
+         <div class="resultados1">
+         <p>{{ nota.pontos  }}/20</p></div>
+             <div class="resultados2">🙂</div>
+         </div>
+
+         {% elif nota.pontos <= 18 %}
+         <div class="grid-resultados">
+         <div class="resultados1">
+         <p>{{ nota.pontos  }}/20</p></div>
+
+             <div class="resultados2">🙂</div>
+         </div>
+
+         {% else %}
+         <div class="grid-resultados">
+         <div class="resultados1">
+         <p>{{ nota.pontos  }}/20</p></div>
+
+             <div class="resultados2">🤯</div>
+         </div>
+     {% endif %}
+{% endfor %}
+
+
+
+
+  </main>
+
+
+{% endblock %}
+

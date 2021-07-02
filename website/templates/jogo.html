@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+ function showHide() {
+   var div = document.getElementById("hidden_div");
+   if (div.style.display == 'none') {
+     div.style.display = '';
+     div.style.marginLeft = '30vw';
+     div.style.color = 'black';
+     div.style.fontWeight = 'bold';
+     div.style.fontSize = '1.5vw';
+   }
+   else {
+     div.style.display = 'none';
+   }
+ }
+</script>
+
+
+<main class="main_questionario">
+<fieldset class="field_quest">
+    <form  method="POST" action="{% url 'website:quizz' %}">
+    {% csrf_token %}
+        {% for pergunta in perguntas %}
+            <section class="pergunta_quest"  value="{{ pergunta }}">{{ pergunta.numero }}) {{pergunta.pergunta}} </section>
+            <input class="resposta_quest" type="hidden" name="{{ pergunta.id }}">
+            <input class="resposta_quest" type="text" name="{{pergunta.id}}">
+
+            {{ pergunta.pontos }} pontos
+
+        {% endfor %}
+
+    <input class="enviar_quest" type="submit" name="submit" href="{% url 'website:pontuacao' %}"/>
+
+</form>
+</fieldset>
+
+
+  </main>
+
+
+{% endblock %}
+

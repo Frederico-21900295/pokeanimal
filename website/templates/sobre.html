@@ -1,0 +1,358 @@
+{% extends 'base.html' %}
+
+{% block pagina %}
+
+      <main >
+
+        <section class="sabout">
+
+            <p class="sobresite">
+            O site que vai ser criado e desenvolvido para o projeto final da unidade curricular está assente em dois principais objetivos:
+                    <br>A) O site irá incorporar uma vertente didática, no sentido em que estará assente na partilha de informação acerca do mundo animal, permitindo a quem a está a utilizar
+                entender e adquirir conhecimento sobre a fauna à sua volta.<br>
+B) O site terá uma segunda vertente, que passa por incorporar um fator de
+jogabilidade, oferecendo ao utilizador uma experiência desafiadora, que consiste na
+interação e competição com outros utilizadores, em que o objetivo é "capturar" o
+número máximo de seres animais possível. <br><br>A tarefa principal possível ao utilizar este site é, aquando da presença de um animal,
+o utilizador pode tirar-lhe uma fotografia e obter as informações relacionadas com o
+mesmo. Assim que o utilizador encontrar um animal e este for identificado, o mesmo passa diretamente a incorporar a sua coleção (POKEDEX). <br><br>
+De seguida iremos apresentar o que usamos para o desenvimento do website:</p>
+
+<table id="inventario">
+    <tr>
+        <th>Elemento</th>
+        <th>Quantidade</th>
+    </tr>
+
+    <tr>
+        <td>Páginas</td>
+        <td>10</td>
+        
+    </tr>
+
+    <tr>
+        <td>Imagens</td>
+        <td>86</td>
+        
+    </tr>
+
+    <tr>
+        <td>Links externos</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>Vídeos</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>Animações</td>
+        <td>12</td>
+    </tr>
+</table>
+
+<table id="HTML5">
+    <tr>
+        <th>Elemento</th>
+        <th>Onde?</th>
+    </tr>
+
+    <tr>
+        <td>Header</td>
+        <td>Todas as páginas</td>
+        
+    </tr>
+
+    <tr>
+        <td>Nav</td>
+        <td>Todas as páginas</td>
+        
+    </tr>
+
+    <tr>
+        <td>Main</td>
+        <td>Todas as páginas</td>
+    </tr>
+
+    <tr>
+        <td>Article</td>
+        <td>Na página do quizz</td>
+    </tr>
+
+    <tr>
+        <td>Section</td>
+        <td>Todas as páginas</td>
+    </tr>
+
+    <tr>
+        <td>Aside</td>
+        <td>Na página do quizz</td>
+    </tr>
+
+    <tr>
+        <td>Footer</td>
+        <td>Todas as páginas</td>
+    </tr>
+    <tr>
+        <td>Table</td>
+        <td>Na página do quizz e nesta</td>
+    </tr>
+    <tr>
+        <td>Fieldset</td>
+        <td>Na página do quizz e nesta</td>
+    </tr>
+    <tr>
+        <td>Form</td>
+        <td>Na página do quizz</td>
+    </tr>
+    <tr>
+        <td>Fieldset</td>
+        <td>Na página do quizz e nesta</td>
+    </tr>
+    <tr>
+        <td>Input</td>
+        <td>Na página do quizz</td>
+    </tr>
+    <tr>
+        <td>Output</td>
+        <td>Na página do quizz</td>
+    </tr>
+    <tr>
+        <td>Iframe</td>
+        <td>Na página principal</td>
+    </tr>
+    <tr>
+        <td>a</td>
+        <td>Na página principal e do quizz</td>
+    </tr>
+    <tr>
+        <td>Details</td>
+        <td>Nesta página</td>
+    </tr>
+    <tr>
+        <td>Svg</td>
+        <td>Na página principal</td>
+    </tr>
+
+</table>
+
+<table id="CSS">
+    <tr>
+        <th>Selectores CSS</th>
+        <th>Exemplos</th>
+    </tr>
+
+    <tr>
+        <td>*{Universal}</td>
+        <td>*{
+            margin: 0;
+            max-width:100%;}
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td>header {Tipo}</td>
+        <td>header {
+            width: 100%;
+            height: 300px;}</td>
+    </tr>
+
+    <tr>
+        <td>.class{Classe}</td>
+        <td>.texto {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            color: white;
+          }</td>
+    </tr>
+    <tr>
+        <td>#unico {Id}</td>
+        <td>#CSS tr:nth-child(even){background-color: #f2f2f2;}</td>
+    </tr>
+    <tr>
+        <td>a[target=_blank] {Atributo}</td>
+        <td>a[target=_blank] {
+            color: red;}</td>
+    </tr>
+    <tr>
+        <td>a:hover{pseudo-classe}</td>
+        <td>#ra:hover { transform: scale(2);}</td>
+    </tr>
+    
+
+   
+</table>
+
+
+
+<table id="caracteristicas">
+    <tr>
+        <th>Características</th>
+        <th>Elementos/técnicas</th>
+        <th>Exemplos</th>
+    </tr>
+
+    <tr>
+        <td>Layouts</td>
+        <td>Usou-se o CSS grid e CSS flexbox para construção de layouts</td>
+        <td>.main {
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            background-image: url(imagens/fundo.jpg);}</td>
+        
+    </tr>
+
+    <tr>
+        <td>Responsividade</td>
+        <td>Foram usadas media queries que adaptam o layout para telemovel e PC consoante o tamanho da janela do browser.</td>
+        <td>@media only screen and (max-width: 1024px) {
+            .foto {
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 2;
+                grid-row-end: 3;                
+                box-sizing: border-box;
+            }</td>
+    </tr>
+
+    <tr>
+        <td>Animações</td>
+        <td>Foram feitas animações usando keyframes que permitem a deslocação dos ícones dos animais</td>
+        <td>@keyframes girafa {
+            from {
+                left: 0%;
+                top: 0%;
+            }
+            to {
+                left: 78%;
+                top: 45%;
+            }
+          
+          }</td>
+    </tr>
+    </table>
+
+    <section id="Layout">
+        <h1 class="textolayout">Layouts</h1>
+        <section id="primeirolayout">
+        <figure>
+            <img src="static/css/imagens/layout-home.jpg">
+            <details class="detail1">Layout da página principal para todos os devices.</details>
+        </figure>
+    </section>
+    <section id="segundolayout">
+        <figure>
+            <img src="static/css/imagens/animaisgeral.png" >
+            <details class="detail1">Layout da página principal para todos os devices.</details>
+        </figure>
+    </section>
+    <section id="terceirolayout">
+        <figure>
+            <img src="static/css/imagens/animaisclasses.png" >
+            <details class="detail1">Layout da página de cada classe para pc e tablet.</details>
+        </figure>
+    </section>
+    <section id="quartolayout">
+        <figure>
+            <img src="static/css/imagens/animais-tlm.png" >
+            <details class="detail1">Layout da página de cada classe para telemóvel.</details>
+        </figure>
+    </section>
+    
+    </section>
+
+
+
+
+<section class="mapaweb">
+    <section class="jjjj">
+    <h1 class="titulomapa">Mapa do WebSite</h1>
+    <img src="static/css/imagens/imagem-mapa.drawio 2.png" class="webmap">
+</section>
+    <section class="oooo">
+        <h1 class="titulovideoweb">Video sobre WebSite</h1>
+
+        <iframe class="videosobreweb" src="https://www.youtube.com/embed/LM9bSrcJa60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</section>
+
+
+</section>
+
+
+    <section class="flex-container7">
+        <section class="centrado">
+            <svg  class="worldcloud">
+                <g transform="translate(100,75)"> 
+                    <a href="index.html">
+                        <text id="TextElement" x="-130" y="-5" style="font-family:Palatino;font-size:28;font-weight:bold; visibility:hidden">PokeAnimal
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 30 300 L 100 89" begin="1s" dur="3s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                          </text> 
+                    </a>
+                            
+                  <a href="animais.html">
+                       <text id="TextElement2" x="-80" y="-80" style="font-family:Palatino;font-size:23; visibility:hidden">Classes
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                        <animateMotion path="M 100 10 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="90" begin="1s" dur="2s" fill="freeze" /> 
+                        </text> 
+                </a>
+                <a href="mamiferos.html">
+                    <text id="TextElement3" x="-30" y="-50" style="font-family:Andale Mono;font-size:19; visibility:hidden">Mamíferos
+                 <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                 <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+                 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze"/> 
+                 </text> 
+                </a>
+        
+                <a href="aves.html">
+                    <text id="TextElement" x="-80" y="2" style="font-family:Palatino;font-size:19; visibility:hidden">Aves
+                     <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                     <animateMotion path="M 30 300 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                     <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-100" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                   </text> 
+                   </a>
+        
+                <a href="repteis.html">
+                    <text id="TextElement3" x="-90" y="-30" style="font-family:Andale Mono;font-size:19; visibility:hidden">Répteis
+                 <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                 <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+                 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                 </text> 
+             </a>
+                    
+                <a href="peixes.html">
+                    <text id="TextElement3" x="-50" y="-2" style="font-family:OCR A Std;font-size:17; visibility:hidden">Peixes
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 50 100" begin="1s" dur="3s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="skewY" from="-100" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                    </text> 
+                </a>
+                    
+                <a href="anfibios.html">
+                       <text id="TextElement3" x="-20" y="2" style="font-family:Courier New-B;font-size:19; visibility:hidden">Anfíbios
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    </text> 
+                </a>
+                <a href="invertebrados.html">
+                    <text id="TextElement3" x="15" y="-55" style="font-family:Courier New-B;font-size:19; visibility:hidden" >Insetos
+                     <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                 <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                 <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                 </text> 
+             </a>
+                </g> 
+              </svg>
+            </section>
+    </section>
+
+
+        </main>
+
+{% endblock %}

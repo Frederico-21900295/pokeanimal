@@ -1,0 +1,83 @@
+
+{% extends 'base.html' %}
+{% block pagina %}
+
+    <main class="main_contato">
+
+            <section class="section-contatos">
+                {% if contatos|length > 0 %}
+                    {% for contat in contatos %}
+
+                    <h2 style="color: white;grid-row: 1;margin-left: 1vw">Contactos</h2>
+
+                    <section class="contato-nome">
+                        <h5 style="margin-top: 1vw">Nome: {{contat.nome}} {{contat.apelido}}</h5>
+                        <h5 style="margin-top: 1vw">Telefone: {{contat.telefone}}</h5>
+                        <h5 style="margin-top: 1vw">Data de Nascimento: {{contat.data_nascimento}}</h5>
+                        <h5 style="margin-top: 1vw">Email: {{contat.email}}</h5>
+                        <h5 style="margin-top: 1vw">Animal Preferido: {{ contat.animal }}</h5>
+
+                    </section>
+
+                        <section style="grid-row: 3; grid-column: 1/3; border: 1px solid white; height: 5vw;margin-left: 8vw;width: 110%">
+                            <h5 style="margin-top: 0.5vw;color: white">Mensagem: {{contat.mensagem}}</h5>
+                        </section>
+
+
+                    <section style="grid-row: 4; grid-column: 2">
+                        {% if contat.animal == "Leopardo" %}
+                    <img src="static/css/imagens/tigre-iframe.jpg" class="leopardo" >
+                        {% elif contat.animal == "Alce" %}
+                    <img src="static/css/imagens/alce.jpg" class="Alce" >
+                        {% elif contat.animal == "Chita" %}
+                    <img src="static/css/imagens/chita.jpg" class="Chita" >
+                        {% elif contat.animal == "Cão" %}
+                    <img src="static/css/imagens/cao.jpg" class="Cão" >
+                        {% elif contat.animal == "Gato" %}
+                    <img src="static/css/imagens/gato.jpg" class="Gato" >
+                        {% elif contat.animal == "Leão" %}
+                    <img src="static/css/imagens/leao.jpg" class="Leão" >
+                        {% elif contat.animal == "Orca" %}
+                    <img src="static/css/imagens/orca.jpg" class="Orca" >
+                        {% elif contat.animal == "Tigre" %}
+                    <img src="static/css/imagens/tigre.jpg" class="Tigre" >
+                        {% elif contat.animal == "Touro" %}
+                    <img src="static/css/imagens/touro.jpg" class="Touro" >
+                        {% elif contat.animal == "Tubarão" %}
+                    <img src="static/css/imagens/tubarao.jpg" class="Tubarão" >
+                    {% endif %}
+
+                    </section>
+
+
+
+                    <section style="grid-row: 5;">
+
+                        <a href ="{% url 'website:editarcontatos' contat.id %}" style="color: white" class="editarperfil">Editar Perfil ✏️</a>
+                    </section>
+
+                    {% endfor %}
+
+
+
+            {% else %}
+
+                  <h2>Formulário de Contacto</h2>
+                  <form  method="POST" action ="{% url 'website:contatos' %}">
+                    {% csrf_token %}
+                      <section class="formulario-cont">
+                        {{ form_contatos.as_p }}
+                          </section>
+                          <input type="submit" name="submit" >
+                  </form>
+
+                {%endif%}
+
+
+
+            </section>
+
+</main>
+
+
+{% endblock %}
