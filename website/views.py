@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from matplotlib import pyplot as plt
+
 from django.views.generic import ListView
 from django.contrib.auth import login as auth_login
 
