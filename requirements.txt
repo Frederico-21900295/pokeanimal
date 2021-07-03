@@ -1,0 +1,2 @@
+matplotlib
+django_tables2
