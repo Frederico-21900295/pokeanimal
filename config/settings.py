@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 from django.contrib import staticfiles
 from environs import Env
-from matplotlib import pyplot as plt
+
 
 
 env = Env()
