@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 from django.contrib import staticfiles
 from environs import Env
+from matplotlib import pyplot as plt
 
 
 env = Env()
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # novo
-    
+    'matplotlib',
     'django_tables2',
     'website',
 ]

@@ -1,0 +1,4 @@
+Django~=3.2.5
+environs~=8.0.0
+matplotlib~=3.4.2
+website~=1.1
