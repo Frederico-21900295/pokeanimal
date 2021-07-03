@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # novo
-    
-    
+    'matplotlib',
+    'django_tables2',    
     'website',
 ]
 
