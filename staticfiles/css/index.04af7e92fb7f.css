@@ -108,7 +108,7 @@ margin-left: 24%;
 }
 
 .main_contato{
-  background-image: url("imagens/banner-new.jpeg");
+  background-image: url("imagens/banner-new.36d791c64965.jpeg");
     height: 100%;
     min-height: 750px;
    background-attachment: fixed;
@@ -121,7 +121,7 @@ margin-left: 24%;
 
 
 .main_contato1{
-  background-image: url("imagens/banner-new.jpeg");
+  background-image: url("imagens/banner-new.36d791c64965.jpeg");
     height: 100%;
     min-height: 600px;
    background-attachment: fixed;
@@ -174,7 +174,7 @@ margin-left: 24%;
     grid-column: 2;
     border-right: 2px solid black;
     border-left: 2px solid black;
-    background-image: url("imagens/banner-fundo.jpg");
+    background-image: url("imagens/banner-fundo.a62acc351f7d.jpg");
     background-position: 20%;
     display: grid;
     grid-template-columns: 33% 33% auto;
@@ -244,7 +244,7 @@ color: white;
     background-color: black;
 }
 .main_questionario{
-  background-image: url(imagens/fasddfgasr1.jpeg);
+  background-image: url("imagens/fasddfgasr1.8cd1798097b7.jpeg");
    min-height: 500px;
    background-attachment: fixed;
    background-position: center;
@@ -256,7 +256,7 @@ color: white;
 
 
 .main_questionario1{
-  background-image: url(imagens/fasddfgasr1.jpeg);
+  background-image: url("imagens/fasddfgasr1.8cd1798097b7.jpeg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -349,7 +349,7 @@ color: white;
 
 
 .pokke{
-  background-image: url(imagens/fundinho.jpg);
+  background-image: url("imagens/fundinho.1b52b6a48590.jpg");
    min-height: 500px;
    background-attachment: fixed;
    background-position: center;
@@ -380,7 +380,7 @@ color: white;
   display: grid;
   grid-template-columns: 10% 10% 30% 30% 10% 10%;
   grid-template-rows: 1vw auto 2vw ;
-    background-image: url(imagens/banner-1234.jpeg);
+    background-image: url("imagens/banner-1234.15177dfb44a9.jpeg");
    background-size: cover;
 }
 
@@ -446,7 +446,7 @@ color: white;
 /*   grid-template-rows: auto 25px auto 25px auto 25px auto 25px auto 25px auto; */
   grid-column-gap: 10px;
  
-  background-image: url(imagens/fundo.jpg);
+  background-image: url("imagens/fundo.557a17021636.jpg");
    min-height: 500px;
    background-attachment: fixed;
    background-position: center;
@@ -460,7 +460,7 @@ color: white;
   grid-row: 1 / 3;
   width: 100%;
   height: 300px;
-  background-image: url('imagens/principal.jpg');
+  background-image: url("imagens/principal.b94568eed0ce.jpg");
   background-size: cover;
   background-position: 100% 30%;
 }
@@ -468,7 +468,7 @@ color: white;
 
 
 .grid {
-  background-image: url(imagens/fundo.jpg);
+  background-image: url("imagens/fundo.557a17021636.jpg");
   color: #fff;
 }
 
@@ -477,7 +477,7 @@ color: white;
 .main {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
-  background-image: url(imagens/fundo.jpg);
+  background-image: url("imagens/fundo.557a17021636.jpg");
    min-height: 500px;
    background-attachment: fixed;
    background-position: center;
@@ -706,7 +706,7 @@ h3 {
 
 .parallax {
   /* The image used */
-  background-image: url("imagens/anaconda.jpg");
+  background-image: url("imagens/anaconda.57d71a969743.jpg");
   z-index: -1;
 
 
@@ -725,7 +725,7 @@ header {
   grid-column: 1 / 6;
   width: 100%;
   height: 300px;
-  background-image: url('imagens/principal.jpg');
+  background-image: url("imagens/principal.b94568eed0ce.jpg");
   background-size: cover;
   background-position: 100% 30%;
 }
@@ -821,7 +821,7 @@ nav {
     width: 100%;
     height: max-content;
     border: 1px solid black;
-    background-image: url('imagens/back3.jpg');
+    background-image: url("imagens/back3.f25896f46e80.jpg");
     background-size: cover;
     background-position: 100% 30%;
 }
@@ -891,7 +891,7 @@ nav {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 100%;
   height: 500px;
-  background-image: url('imagens/ursos.jpg');
+  background-image: url("imagens/ursos.11165cf9e940.jpg");
   background-size: cover;
   background-position: 100% 50%;
   color: white;
@@ -934,7 +934,7 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   height: 300px;
-  background-image: url('imagens/back2.jpg');
+  background-image: url("imagens/back2.b766a59e8a62.jpg");
   background-size: cover;
   background-position: 100% 30%;
   border-top: 2px solid black;  
@@ -1006,7 +1006,7 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   height: 400px;
-  background-image: url('imagens/back1.jpg');
+  background-image: url("imagens/back1.f29f578e99df.jpg");
   background-size: cover;
   background-position: 100% 30%;
   border-top: 2px solid black;  
@@ -1159,7 +1159,7 @@ main section section a{
   grid-row: 1;
   grid-column: 1 / 4;
   border: 1px solid black;
-  background-image: url('imagens/mapa.jpg');
+  background-image: url("imagens/mapa.5544dabd5d82.jpg");
   background-size: 100% 110%;
   background-position: 100% 30%;
 }
@@ -1167,7 +1167,7 @@ main section section a{
 .fundo {
   grid-row: 2;
   grid-column: 1 / 4;
-  background: url('imagens/back4.jpg') no-repeat;
+  background: url("imagens/back4.80e3f8e6f3c6.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -1186,7 +1186,7 @@ main section section a{
 .flex-container7{
   width: 100%;
   height: 400px;
-  background: url('imagens/back7.jpg') no-repeat;
+  background: url("imagens/back7.6956cfbe9e4d.jpg") no-repeat;
   background-size: cover;
   background-position: 100% 80%;
   border-top: 2px solid black;
@@ -1283,7 +1283,7 @@ a{
 .squizz{
   height: max-content;
   width: 100%;
-  background: url('imagens/back5.jpg') no-repeat;
+  background: url("imagens/back5.f2a2ba10beeb.jpg") no-repeat;
     background-size: cover;
     background-position: 100% 30%;
     z-index: -1;
@@ -1780,7 +1780,7 @@ background-color: black;
 .sabout{
   height: 100%;
   width: 100%;
-  background: url('imagens/back6.jpg') no-repeat;
+  background: url("imagens/back6.dd877b1e2466.jpg") no-repeat;
     background-size: cover;
     background-position: 80% 30%;
     z-index: -1;
@@ -2103,7 +2103,7 @@ margin-top: 20px;
     width: 99%;
     height: max-content;
     border: 4px solid black;
-    background: url('imagens/back3.jpg') no-repeat;
+    background: url("imagens/back3.f25896f46e80.jpg") no-repeat;
     background-size: cover;
     background-position: 100% 30%;
   }
@@ -2155,7 +2155,7 @@ margin-top: 20px;
 
     .parallax {
       /* The image used */
-      background-image: url("imagens/anaconda.jpg");
+      background-image: url("imagens/anaconda.57d71a969743.jpg");
       z-index: -1;
 
     
@@ -2284,7 +2284,7 @@ margin-top: 20px;
 
 .squizz{
   width: 100%;
-  background: url('imagens/back5.jpg') no-repeat;
+  background: url("imagens/back5.f2a2ba10beeb.jpg") no-repeat;
     background-size: cover;
     background-position: 100% 30%;
     z-index: -1;
@@ -2557,7 +2557,7 @@ margin-left: -46px;
   header {
     width: 100%;
     height: 300px;
-    background-image: url('imagens/principal.jpg');
+    background-image: url("imagens/principal.b94568eed0ce.jpg");
     background-size: cover;
     background-position: 100% 30%;
   }
@@ -2742,7 +2742,7 @@ margin-left: -46px;
   justify-content: space-evenly;
   width: 100%;
   height: 260px;
-  background-image: url('imagens/back2.jpg');
+  background-image: url("imagens/back2.b766a59e8a62.jpg");
   background-size: cover;
   background-position: 100% 30%;
   border-top: 2px solid black;  
@@ -2756,7 +2756,7 @@ margin-left: -46px;
   justify-content: space-evenly;
   width: 100%;
   height: 260px;
-  background-image: url('imagens/back1.jpg');
+  background-image: url("imagens/back1.f29f578e99df.jpg");
   background-size: cover;
   background-position: 100% 30%;
   border-top: 2px solid black;  
@@ -2940,7 +2940,7 @@ transform: rotate(-90deg);
   width: 98%;
   height: max-content;
   border: 4px solid black;
-  background-image: url('imagens/back3.jpg');
+  background-image: url("imagens/back3.f25896f46e80.jpg");
   background-size: cover;
   background-position: 100% 30%;
 }
@@ -2948,7 +2948,7 @@ transform: rotate(-90deg);
 .squizz{
   height: max-content;
   width: 100%;
-  background-image: url('imagens/back5.jpg');
+  background-image: url("imagens/back5.f2a2ba10beeb.jpg");
     background-size: cover;
     background-position: 100% 30%;
     z-index: -1;
@@ -3239,7 +3239,7 @@ color: white;
   grid-row: 1 / 2;
   width: 100%;
   height: 300px;
-  background-image: url(imagens/principal.jpg);
+  background-image: url("imagens/principal.b94568eed0ce.jpg");
   background-size: cover;
   background-position: 100% 30%;
 }
@@ -3348,7 +3348,7 @@ display: none;
 .sabout{
   height: 100%;
   width: 100%;
-  background-image: url('imagens/back6.jpg');
+  background-image: url("imagens/back6.dd877b1e2466.jpg");
     background-size: cover;
     background-position: 80% 30%;
     z-index: -1;
@@ -3952,7 +3952,7 @@ text-shadow: 1vw 1vw 1vw rgba(255, 255, 255, 1);
     width: 100%;
     height: max-content;
     border: 0px solid black;
-    background-image: url(imagens/back3.jpg);
+    background-image: url("imagens/back3.f25896f46e80.jpg");
     background-size: cover;
     background-position: 100% 30%;
 }
