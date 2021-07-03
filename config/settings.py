@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # novo
 
-    'django_tables2',    
+       
     'website',
 ]
 
